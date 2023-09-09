@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fetch.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="search-wrapper">
+      <label for="search">Search Country</label>
+      <input type="search" id="search" data-search />
+    </div>
+    <div class="country-cards" data-country-cards-container></div>
+    <template data-user-template>
+      <div class="card">
+        <div class="title header" data-title></div>
+        <div class="active-cases" data-active-cases></div>
+        <div class="new-cases" data-new-cases></div>
+        <div class="recovered-cases" data-recovered-cases></div>
+        <div class="total-cases" data-total-cases></div>
+        <div class="total-deaths" data-total-deaths></div>
+        <div class="total-tests" data-total-tests></div>
+      </div>
+    </template>
+    <script src="fetch.js"></script>
+  </body>
+</html>
